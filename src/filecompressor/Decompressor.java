@@ -15,7 +15,7 @@ public class Decompressor {
         String fileDir = file.getParent();
         System.out.print(fileDir);
         FileInputStream in = new FileInputStream(file);
-        FileOutputStream out = new FileOutputStream(fileDir + "DCompressed.txt");
+        FileOutputStream out = new FileOutputStream(fileDir + "\\DCompressed.txt");
         GZIPInputStream zip = new GZIPInputStream(in);
         
         byte [] read = new byte [1024];
